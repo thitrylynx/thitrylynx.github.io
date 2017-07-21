@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Барбершоп «Бородинский»</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet"> 
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/barbershop-style.css" rel="stylesheet">
+    </head>
+    <body class="catalog-page">
+        <header class="main-header">
+            <section class="container clearfix">
+                <nav class="main-navigation">
+                    <a class="logo" href="barbershop-index.html"><img src="img/logo.png" width="111" height="24" alt="Барбершоп-Бородинский"></a>
+                    <ul class="navigation-list">
+                        <li><a class="navigation-link" href="#">Информация</a></li>
+                        <li><a class="navigation-link" href="#">Новости</a></li>
+                        <li><a class="navigation-link" href="barbershop-price-list.html">Прайс-лист</a></li>
+                        <li class="active-link"><a class="navigation-link" href="catalog.html">Магазин</a></li>
+                        <li><a class="navigation-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="user-block">
+                    <a class="login-link" href="#">Вход</a>
+                </div>
+            </section>
+        </header>
+        <main class="container clearfix">
+            <h1 class="catalog-item-tittle">Набор для путешествий «Baxter of California»</h1>
+            <section class="pages-navigation">
+                <ul class="breadcrumbs">
+                    <li><a class="page-link" href="index.html">Главная</a></li>
+                    <li><a class="page-link decoration" href="barbershop-catalog.html">Магазин</a></li>
+                    <li><a class="page-link decoration" href="barbershop-catalog.html">Средства для ухода</a></li>
+                    <li class="active-page"><a class="decoration">Набор для путешествий «BAXTER OF CALIFORNIA»</a></li>
+                </ul>
+            </section>
+            <section class="gallery">
+                <div class="main-image">
+                    <img src="img/item.jpg" width="460" height="499" alt="Набор для путешествий BAXTER OF CALIFORNIA">
+                </div>
+                <div class="small-images">
+                    <img src="img/small-item-1.jpg" width="140" height="149" alt="Набор для путешествий BAXTER OF CALIFORNIA"></a>
+                    <img src="img/small-item-2.jpg" width="140" height="149" alt="Набор для путешествий BAXTER OF CALIFORNIA"></a>
+                    <img src="img/small-item-3.jpg" width="140" height="149" alt="Набор для путешествий BAXTER OF CALIFORNIA"></a>
+                </div>
+            </section>
+            <section class="gallery-description clearfix">
+                <div class="availability">Есть в наличии</div>
+                <div class="series-of-article"> Артикул: Dexter-Ae</div>
+                <p class="product-description">Travel Kit –  необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+                <div class="offer-box catalog-offer clearfix">
+                        <p class="price-container"> 2 900 РУБ.</p>
+                        <a class="buy-container" href="#">Купить</a>
+                </div>
+                <div class="tittle-of-product-options">В набор входят:</div>
+                <ul class="product-list">
+                    <li>Средство для умывания (50 мл)</li>
+                    <li>Увлажняюйщий крем (50 мл)</li>
+                    <li>Крем для бритья (50 мл)</li>
+                    <li>Крем после бритья, шампунь (50 мл)</li>
+                    <li>Удобная кожаная косметичка</li>
+                </ul>
+             </section>
+        </main>
+        <footer class="main-footer">
+            <div class="container clearfix">
+                <div class="footer-contacts">
+                    <p>Барбершоп «Бородинский»<br>
+                        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                        <a class="map-content-link" href="#">Как нас найти?</a><br>
+                        Телефон: +7 (812) 666-02-66</p>
+                </div>
+                <div class="footer-social">
+                    <p>Давайте дружить!</p>
+                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>Разработано:</p>
+                    <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+                </div>
+            </div>
+        </footer>
+        <div class="modal-content">
+            <button class="btn-close" type="button" title="Закрыть">Закрыть</button>
+            <h2 class="modal-tittle">Личный кабинет</h2>
+            <p class="modal-description">Введите свой логин и пароль.</p>
+            <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="user-login" type="text" name="login" placeholder="Логин" required>
+                <input class="user-password" type="password" name="password" placeholder="Пароль" required>
+                <label class="login-checkbox">
+                    <input type="checkbox" name="remember">
+                    <span class="checkbox-icon"></span>
+                    Запомните меня
+                </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
+                <button class="login-btn" type="submit">Войти</button>
+            </form> 
+        </div>
+        <div class="modal-content-map">
+            <button class="map-close" type="button" title="Закрыть">Закрыть</button>
+            <div class="map"></div>
+        </div>
+        <div class="modal-overlay"></div>
+        <script src="js/script-1.js"></script>
+    </body>
+</html>
+          

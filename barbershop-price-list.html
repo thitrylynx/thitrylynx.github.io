@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Барбершоп «Бородинский»</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet"> 
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/barbershop-style.css" rel="stylesheet">
+    </head>
+    <body class="catalog-page">
+        <header class="main-header">
+            <section class="container clearfix">
+                <nav class="main-navigation">
+                    <a class="logo" href="barbershop-index.html"><img src="img/logo.png" width="111" height="24" alt="Барбершоп-Бородинский"></a>
+                    <ul class="navigation-list">
+                        <li><a class="navigation-link" href="#">Информация</a></li>
+                        <li><a class="navigation-link" href="#">Новости</a></li>
+                        <li class="active-link"><a class="navigation-link">Прайс-лист</a></li>
+                        <li><a class="navigation-link" href="barbershop-catalog.html" >Магазин</a></li>
+                        <li><a class="navigation-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="user-block">
+                    <a class="login-link" href="#">Вход</a>
+                </div>
+            </section>
+        </header>
+        <main class="container clearfix">
+            <section class="pages-navigation">
+                <h1 class="main-tittle">Прайс-лист</h1>
+                <ul class="breadcrumbs">
+                    <li>
+                        <a class="page-link" href="barbershop-index.html">Главная</a>
+                    </li>
+                    <li class="active-page">
+                        <a class="decoration">Прайс-лист</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="price-content clearfix">
+                <div class="main-head">
+                    <h2>Истинно мужская классика</h2>
+                </div>
+                <div class="price-column left">
+                    <h2>Мы используем только лучшие средства:</h2>
+                    <ul class="custom-list-1">
+                        <li class="decoration-2">Baxter of California</li>
+                        <li class="decoration-2">Mr Natty</li>
+                        <li class="decoration-2">Suavecito</li>
+                        <li class="decoration-2">Malin+Goetz</li>
+                    </ul>
+                </div>
+                <div class="price-column right">
+                    <h2>Цены на услуги наших мастеров:</h2>
+                    <table class="prices-table">
+                        <tr>
+                            <td>Стрижка</td>
+                            <td>1500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Стрижка бороды</td>
+                            <td>500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Накрутка усов</td>
+                            <td>350 р.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="price-column left">
+                    <h2>Несколько слов о нас:</h2>
+                    <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас — это уникальная и продуманная до мелочей работа. Мы не работаем на<br> количество, мы делаем качество.</p>
+                </div>
+                <div class="price-column right">
+                    <p>Наша мастерская расположена в центре города, поэтому<br> сделать стильную стрижку можно в любое время, даже в<br> обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="container clearfix">
+                <div class="footer-contacts">
+                    <p>Барбершоп «Бородинский»<br>
+                        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                        <a class="map-content-link" href="#">Как нас найти?</a><br>
+                        Телефон: +7 (812) 666-02-66</p>
+                </div>
+                <div class="footer-social">
+                    <p>Давайте дружить!</p>
+                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>Разработано:</p>
+                    <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+                </div>
+            </div>
+        </footer>
+        <div class="modal-content">
+            <button class="btn-close" type="button" title="Закрыть">Закрыть</button>
+            <h2 class="modal-tittle">Личный кабинет</h2>
+            <p class="modal-description">Введите свой логин и пароль.</p>
+            <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="user-login" type="text" name="login" placeholder="Логин" required>
+                <input class="user-password" type="password" name="password" placeholder="Пароль" required>
+                <label class="login-checkbox">
+                    <input type="checkbox" name="remember">
+                    <span class="checkbox-icon"></span>
+                    Запомните меня
+                </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
+                <button class="login-btn" type="submit">Войти</button>
+            </form> 
+        </div>
+        <div class="modal-content-map">
+            <button class="map-close" type="button" title="Закрыть">Закрыть</button>
+            <div class="map"></div>
+        </div>
+        <div class="modal-overlay"></div>
+        <script src="js/script-1.js"></script>
+    </body>
+</html>
