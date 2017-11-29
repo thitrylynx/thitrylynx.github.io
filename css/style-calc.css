@@ -1,0 +1,46 @@
+.calc {
+  display: flex;
+  height: 210px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.calc div {
+  width: 78px;
+}
+.calc__first-column input,
+.calc__second-column input,
+.calc__third-column input {
+  width: 70px;
+  height: 16px;
+  text-align: center;
+}
+.column-count {
+  margin: 20px 0 0 65px;
+  padding: 0;
+}
+.column-count li {
+  padding-bottom: 4px;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 15px;
+}
+.calc__second-column input {
+  background-color: silver;
+  border: 2px solid gray;
+}
+.calc__calculate {
+  margin-left: 20px;
+  align-self: flex-end;
+}
+.calc-add {
+  align-self: flex-end;
+}
+.calc-remove {
+  align-self: flex-end;
+}
+.calc-default {
+  align-self: flex-end;
+}
