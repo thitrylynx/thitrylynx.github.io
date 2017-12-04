@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>test</title>
+  <title>Calculator MA v.1.0</title>
   <link href="css/style-calc.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon1.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -66,6 +66,14 @@
     <button class="calc-add" type="button">+</button>
     <button class="calc-remove" type="button">-</button>
     <button class="calc-default" type="button">Сброс</button>
+    <input class="fourth-column" type="text" readonly>
+    <div class="decision">
+      <img class="decision__formula hidden" src="img/formula.jpg" alt="Формула 1" width="150px">
+      <p class="decision__answer"></p>
+      <img class="decision__formula2 hidden" src="img/formula2.jpg" alt="Формула 2" width="150px">
+      <p class="decision__predict hidden"></p>
+      <p class="decision__piece hidden"></p>
+    </div>
   </form>
   <script src="./js/script.js"></script>
 </body>
