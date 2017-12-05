@@ -7,7 +7,10 @@ body {
   margin: 0 auto;
 }
 .calc-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 10px;
   background-color: gold;
@@ -72,32 +75,40 @@ body {
   background-color: skyblue;
 }
 .calc-first__default {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-left: 40px;
   margin-right: 130px;
   margin-bottom: 20px;
 }
 .calc-first__remove {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 20px;
 }
 .calc-first__clarification {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 20px;
 }
 .calc-first__add {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-right: 100px;
   margin-bottom: 20px;
 }
 .calc-first__calculate {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 20px;
 }
 /* 2 ЗАДАЧА */
 
 .calc-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 30px 0 100px 0;
   background-color: sandybrown;
@@ -154,7 +165,9 @@ h3 {
   border: 2px solid rgb(170, 180, 184);
 }
 .decision {
+  -ms-flex-item-align: start;
   align-self: flex-start;
+  -ms-flex-preferred-size: 300px;
   flex-basis: 300px;
   width: 450px;
   margin-left: 50px;
@@ -165,29 +178,35 @@ h3 {
   display: none;
 }
 .calc__calculate {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 20px;
 }
 .calc-remove {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-left: 30px;
   margin-bottom: 20px;
 }
 .calc__clarification {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 20px;
 }
 .calc-add {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-right: 5px;
   margin-bottom: 20px;
 }
 .calc-default {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-left: 40px;
   margin-bottom: 20px;
 }
 .fourth-column {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   width: 90px;
   margin-right: 60px;
