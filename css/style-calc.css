@@ -127,16 +127,14 @@ body {
 .calc__first-column {
   float: left;
   width: 70px;
-  margin-right: 5px;
 }
 .calc__second-column {
   float: left;
   width: 70px;
-  margin-right: 5px;
 }
 .calc__third-column {
   float: left;
-  width: 90px;
+  width: 100px;
 }
 .calc__first-column input,
 .calc__second-column input,
@@ -164,7 +162,7 @@ h3 {
   border: 2px solid rgb(170, 180, 184);
 }
 .calc__third-column input {
-  width: 90px;
+  width: 100px;
   margin-bottom: 2px;
   background-color: rgba(211, 218, 221, 0.966);
   border: 2px solid rgb(170, 180, 184);
@@ -180,7 +178,7 @@ h3 {
 }
 .calc__calculate {
   float: right;
-  margin-right: 65px;
+  margin-right: 25px;
   margin-bottom: 20px;
 }
 .calc-remove {
@@ -204,7 +202,7 @@ h3 {
 }
 .fourth-column {
   float: left;
-  width: 80px;
+  width: 90px;
   margin-right: 20px;
   margin-bottom: 20px;
   text-align: center;
