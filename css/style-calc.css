@@ -126,22 +126,22 @@ body {
 }
 .calc__first-column {
   float: left;
-  width: 60px;
-  margin-right: 15px;
+  width: 70px;
+  margin-right: 5px;
 }
 .calc__second-column {
   float: left;
-  width: 60px;
-  margin-right: 15px;
+  width: 70px;
+  margin-right: 5px;
 }
 .calc__third-column {
   float: left;
-  width: 80px;
+  width: 90px;
 }
 .calc__first-column input,
 .calc__second-column input,
 .calc__third-column input {
-  width: 60px;
+  width: 70px;
   height: 16px;
   text-align: center;
 }
@@ -164,7 +164,7 @@ h3 {
   border: 2px solid rgb(170, 180, 184);
 }
 .calc__third-column input {
-  width: 80px;
+  width: 90px;
   margin-bottom: 2px;
   background-color: rgba(211, 218, 221, 0.966);
   border: 2px solid rgb(170, 180, 184);
