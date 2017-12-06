@@ -124,48 +124,47 @@ body {
   margin: 20px 5px 15px 35px;
   padding: 0;
 }
-.calc__first-column {
-  float: left;
-  width: 70px;
-}
-.calc__second-column {
-  float: left;
-  width: 70px;
-}
-.calc__third-column {
-  float: left;
-  width: 100px;
-}
-.calc__first-column input,
-.calc__second-column input,
-.calc__third-column input {
-  width: 70px;
-  height: 16px;
-  text-align: center;
-}
 .column-count li {
   margin-bottom: 3px;
   padding-bottom: 4px;
 }
+.calc__first-column {
+  float: left;
+  width: 60px;
+  margin-right: 10px;
+}
+.calc__second-column {
+  float: left;
+  width: 60px;
+  margin-right: 10px;
+}
+.calc__third-column {
+  float: left;
+  width: 90px;
+}
+.calc__first-column input,
+.calc__second-column input,
+.calc__third-column input {
+  width: 60px;
+  height: 16px;
+  margin-bottom: 2px;
+  text-align: center;
+  border: 2px solid rgb(170, 180, 184);
+}
+
 h3 {
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 15px;
 }
-.calc__first-column input {
-  margin-bottom: 2px;
-}
+
 .calc__second-column input {
-  margin-bottom: 2px;
   background-color: rgba(211, 218, 221, 0.966);
-  border: 2px solid rgb(170, 180, 184);
 }
 .calc__third-column input {
-  width: 100px;
-  margin-bottom: 2px;
+  width: 90px;
   background-color: rgba(211, 218, 221, 0.966);
-  border: 2px solid rgb(170, 180, 184);
 }
 .decision {
   float: left;
@@ -178,7 +177,7 @@ h3 {
 }
 .calc__calculate {
   float: right;
-  margin-right: 25px;
+  margin-right: 75px;
   margin-bottom: 20px;
 }
 .calc-remove {
@@ -202,7 +201,7 @@ h3 {
 }
 .fourth-column {
   float: left;
-  width: 90px;
+  width: 80px;
   margin-right: 20px;
   margin-bottom: 20px;
   text-align: center;
