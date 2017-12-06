@@ -126,20 +126,22 @@ body {
 }
 .calc__first-column {
   float: left;
-  width: 70px;
+  width: 60px;
+  margin-right: 15px;
 }
 .calc__second-column {
   float: left;
-  width: 70px;
+  width: 60px;
+  margin-right: 15px;
 }
 .calc__third-column {
   float: left;
-  width: 100px;
+  width: 80px;
 }
 .calc__first-column input,
 .calc__second-column input,
 .calc__third-column input {
-  width: 70px;
+  width: 60px;
   height: 16px;
   text-align: center;
 }
@@ -162,7 +164,7 @@ h3 {
   border: 2px solid rgb(170, 180, 184);
 }
 .calc__third-column input {
-  width: 100px;
+  width: 80px;
   margin-bottom: 2px;
   background-color: rgba(211, 218, 221, 0.966);
   border: 2px solid rgb(170, 180, 184);
@@ -202,7 +204,7 @@ h3 {
 }
 .fourth-column {
   float: left;
-  width: 90px;
+  width: 80px;
   margin-right: 20px;
   margin-bottom: 20px;
   text-align: center;
