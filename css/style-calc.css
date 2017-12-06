@@ -1,4 +1,6 @@
 body {
+  width: 400px;
+  margin: 0 auto;
   background-color: lavender;
   color: rgb(50, 70, 77);
 }
@@ -8,7 +10,7 @@ body {
   clear: both;
 }
 .wrapper {
-  width: 320px;
+  width: 350px;
   margin: 0 auto;
   font-size: 15px;
 }
@@ -18,7 +20,7 @@ body {
   border-bottom: 2px dashed darkgrey;
 }
 .calc-first__tittle {
-  width: 300px;
+  width: 330px;
   float: left;
 }
 .calc-first__column-count {
@@ -115,7 +117,7 @@ body {
 }
 .calc-second__tittle {
   float: left;
-  width: 300px;
+  width: 340px;
 }
 .column-count {
   float: left;
@@ -168,6 +170,7 @@ h3 {
 .decision {
   float: left;
   width: 245px;
+  margin-top: 10px;
   margin-left: 40px;
 }
 .hidden {
@@ -175,7 +178,7 @@ h3 {
 }
 .calc__calculate {
   float: right;
-  margin-right: 35px;
+  margin-right: 65px;
   margin-bottom: 20px;
 }
 .calc-remove {
