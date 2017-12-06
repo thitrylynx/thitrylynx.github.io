@@ -10,6 +10,7 @@
   var calcDefault = document.querySelector('.calc-default');
   var columnCount = document.querySelector('.column-count');
   var decision = document.querySelector('.decision');
+  var decisionAveregeError = document.querySelector('.decision__averege-error');
   var decisionAnswer = decision.querySelector('.decision__answer');
   var decisionFormula = decision.querySelector('.decision__formula');
   var decisionFormula2 = decision.querySelector('.decision__formula2');
@@ -63,6 +64,7 @@
     thirdColumnList[0].value = '-';
     thirdColumnList[firstColumnList.length - 1].value = '-';
 
+    decisionAveregeError.classList.remove('hidden');
     decisionFormula.classList.remove('hidden');
     decisionFormula2.classList.remove('hidden');
     decisionPredict.classList.remove('hidden');
@@ -86,7 +88,7 @@
     var predictAnswerSecond =
       firstColumnList[firstColumnList.length - 1].value -
       firstColumnList[firstColumnList.length - 2].value;
-    var predictAnswer = predictAnswerFirst * 1 + roundFunction(predictAnswerSecond * 1 / 3, 10000);
+    var predictAnswer = +predictAnswerFirst + roundFunction(predictAnswerSecond * 1 / 3, 10000);
 
     decisionPredict.textContent =
       'Y' +
@@ -119,7 +121,7 @@
       Math.abs(predictAnswer + roundFunction(totalAveregeValueE / indexELenght, 100000)) +
       ']';
 
-    fourthColumn.value = roundFunction(totalAveregeValueE, 100000);
+    decisionAveregeError.textContent = 'Σ(ошибка) = ' + roundFunction(totalAveregeValueE, 100000);
   };
 
   // удаление, добавление новой строки
@@ -150,6 +152,7 @@
     var form = document.querySelector('.calc-second');
     form.reset();
     decisionAnswer.textContent = '';
+    decisionAveregeError.classList.add('hidden');
     decisionFormula.classList.add('hidden');
     decisionFormula2.classList.add('hidden');
     decisionPredict.classList.add('hidden');

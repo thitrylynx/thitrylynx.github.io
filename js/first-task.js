@@ -1,5 +1,6 @@
 'Use strict';
 (function() {
+  var firstTaskColumnCount = document.querySelector('.calc-first__column-count');
   var firstTaskFirst = document.querySelector('.calc-first__first-column');
   var firstTaskSecond = document.querySelector('.calc-first__second-column');
   var firstTaskThird = document.querySelector('.calc-first__third-column');
@@ -8,6 +9,12 @@
   var firstTaskSixth = document.querySelector('.calc-first__sixth-column');
 
   var firstCalculate = document.querySelector('.calc-first__calculate');
+  var firstRemove = document.querySelector('.calc-first__remove');
+  var firstAdd = document.querySelector('.calc-first__add');
+  var firstDefault = document.querySelector('.calc-first__default');
+
+  var firstDecisionFormula3 = document.querySelector('.first__decision-formula3');
+  var firstDecisionFormula4 = document.querySelector('.first__decision-formula4');
 
   var firstDecisionEY = document.querySelector('.first__decision-EY');
   var firstDecisionEX = document.querySelector('.first__decision-EX');
@@ -97,6 +104,10 @@
     firstDecisionEYX.textContent = 'ΣYX = ' + firstTaskTotalYX;
     firstDecisionEXX.textContent = 'ΣX² = ' + firstTaskTotalXX;
     firstDecisionEXX.textContent = 'Σ(ошибка) = ' + firstTaskTotalM;
+
+    firstDecisionFormula3.classList.remove('hidden');
+    firstDecisionFormula4.classList.remove('hidden');
+
     firstDecisionA.textContent =
       'a = ' +
       '[' +
@@ -162,5 +173,63 @@
       'ε = ' + firstTaskTotalM + ' / ' + indexMounth + ' = ' + firstTaskE + '%';
   };
 
+  // удаление, добавление новой строки
+
+  var firstTaskaddNewLine = function() {
+    var firstTaskNewLi = document.createElement('li');
+    var firstTaskFirstInput = document.createElement('input');
+    firstTaskFirstInput.className = 'calc-first__first';
+    var firstTaskSecondInput = document.createElement('input');
+    firstTaskSecondInput.className = 'calc-first__second';
+    var firstTaskThirdInput = document.createElement('input');
+    firstTaskThirdInput.className = 'calc-first__third';
+    var firstTaskFourthInput = document.createElement('input');
+    firstTaskFourthInput.className = 'calc-first__fourth';
+    var firstTaskFifthInput = document.createElement('input');
+    firstTaskFifthInput.className = 'calc-first__fifth';
+    var firstTaskSixthInput = document.createElement('input');
+    firstTaskSixthInput.className = 'calc-first__sixth';
+
+    firstTaskColumnCount.appendChild(firstTaskNewLi);
+    firstTaskFirst.appendChild(firstTaskFirstInput);
+    firstTaskSecond.appendChild(firstTaskSecondInput);
+    firstTaskThird.appendChild(firstTaskThirdInput);
+    firstTaskFourth.appendChild(firstTaskFourthInput);
+    firstTaskFifth.appendChild(firstTaskFifthInput);
+    firstTaskSixth.appendChild(firstTaskSixthInput);
+  };
+
+  var firstTaskRemoveLine = function() {
+    firstTaskColumnCount.removeChild(firstTaskColumnCount.lastChild);
+    firstTaskFirst.removeChild(firstTaskFirst.lastChild);
+    firstTaskSecond.removeChild(firstTaskSecond.lastChild);
+    firstTaskThird.removeChild(firstTaskThird.lastChild);
+    firstTaskFourth.removeChild(firstTaskFourth.lastChild);
+    firstTaskFifth.removeChild(firstTaskFifth.lastChild);
+    firstTaskSixth.removeChild(firstTaskSixth.lastChild);
+  };
+
+  //сброс
+  var firstTaskSetDefaultSettings = function() {
+    var firstForm = document.querySelector('.calc-first');
+    firstForm.reset();
+
+    firstDecisionFormula3.classList.add('hidden');
+    firstDecisionFormula4.classList.add('hidden');
+
+    firstDecisionEY.textContent = '';
+    firstDecisionEX.textContent = '';
+    firstDecisionEYX.textContent = '';
+    firstDecisionEXX.textContent = '';
+    firstDecisionA.textContent = '';
+    firstDecisionB.textContent = '';
+    firstDecisionY11.textContent = '';
+    firstDecisionY12.textContent = '';
+    firstDecisionE.textContent = '';
+  };
+
   firstCalculate.addEventListener('click', calculateFirstTask);
+  firstAdd.addEventListener('click', firstTaskaddNewLine);
+  firstRemove.addEventListener('click', firstTaskRemoveLine);
+  firstDefault.addEventListener('click', firstTaskSetDefaultSettings);
 })();
