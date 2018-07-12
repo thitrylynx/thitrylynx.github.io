@@ -132,69 +132,15 @@ body {
 	border: 5px solid white;
 }
 .resume__skills-languages {
-	padding-left: 80px;
+	padding-left: 40px;
 	padding-right: 50px;
 }
 .resume__skills-languages h2 {
 	margin-left: -10px;
 	color: #7dcbc1;
 }
-.circle {
-	position: relative;
-	width: 150px;
-	height: 150px;
-	margin-top: 20px;
-	overflow: hidden;
-	border-radius: 50%;
-	background: #BCC5D4;
-}
-.circle:after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 120px;
-	height: 120px;
-	margin-top: -60px;
-	margin-left: -60px;
-	overflow: hidden;
-	border-radius: 50%;
-	background: white;
-}
-.circle span:first-child {
-	position: absolute;
-	z-index: 10;
-	top: 55px;
-	left: 48px;
-	font-weight: 700;
-	color: #133671;
-}
-.circle span:nth-of-type(2) {
-	position: absolute;
-	z-index: 10;
-	top: 70px;
-	left: 37px;
-	text-transform: none;
-}
-.sector:nth-of-type(1) {
-	position: absolute;
-	top: 40px;
-	left: 60%;
-	width: 100%;
-	height: 50%;
-	transform-origin: left bottom;
-	transform: skewY(60deg);
-	background: #133671;
-}
-.sector:nth-of-type(2) {
-	position: absolute;
-	left: 50%;
-	width: 50%;
-	height: 90%;
-	transform-origin: left bottom;
-	transform: skewY(-12deg);
-	background: #133671;
-}
+
+
 .resume__skills-code {
 	flex-grow: 0;
 	margin-left: 35px;
