@@ -9,100 +9,6 @@ pieCtx.height = 250;
 barCtx.width  = 350;
 barCtx.height = 250; 
 
-var myPieChart = new Chart(pieCtx,{
-    type: 'doughnut',
-    data: {
-        datasets: [{
-            data: [79,21],
-            boxWidth: 80,
-            backgroundColor: ['#133671', '#B6CCED'],
-            hoverBackgroundColor: [
-                "#FF6384",
-                "#B6CCED"
-              ]
-        }],
-    },
-    options: {
-        tooltips : {
-            enabled: false      
-        },
-        cutoutPercentage: 75,
-        elements: {
-            center: {
-            text: 'ENGLISH Upper',
-            color: '#36A2EB', //Default black
-            fontStyle: 'Helvetica', //Default Arial
-            sidePadding: 15 //Default 20 (as a percentage)
-          }
-        }
-    }
-});
-
-var myBarChart = new Chart(barCtx,{
-    type: 'horizontalBar',
-    data: {
-        labels: ["HTML5", "CSS3", "LESS", "SASS", "JavaScript"],
-        datasets: [{
-            label: '1',
-            data: [80, 70, 60, 60, 65],
-            backgroundColor: ['#F0B056', '#F0B056','#F0B056','#F0B056','#F0B056'],
-            stack: 'Stack 0',
-            hoverBackgroundColor: [
-                "#F4CE95",
-                "#F4CE95",
-                "#F4CE95",
-                "#F4CE95",
-                "#F4CE95"
-            ]
-        }, {
-            label: '2',
-            backgroundColor: ['#FBF1E5','#FBF1E5','#FBF1E5','#FBF1E5','#FBF1E5'],
-            stack: 'Stack 0',
-            data: [20, 30, 40, 40, 35]
-        }],
-    },
-    options: {
-        legend: {
-            display: false
-        },
-        tooltips: {
-            callbacks: {
-                title: function(tooltipItem, data) {
-                  return data['labels'][tooltipItem[0]['index']];
-                },
-                label: function(tooltipItem, data) {
-                  return '';
-                },
-                afterLabel: function(tooltipItem, data) {
-                  var dataset = data['datasets'][0];
-                  return data['datasets'][0]['data'][tooltipItem['index']];
-                }
-            }
-
-        },
-        scales: {
-            xAxes: [{
-                display: false,
-                ticks: {
-                    beginAtZero:true
-                },
-                gridLines: {
-                    display:false
-                },
-                stacked: true
-            }],
-            yAxes: [{
-                ticks: {
-                  beginAtZero: true
-                },
-                gridLines: {
-                    display:false
-                },
-                stacked: true
-            }]
-        }
-    }
-});
 
 Chart.pluginService.register({
     beforeDraw: function (chart) {
@@ -147,3 +53,110 @@ Chart.pluginService.register({
   });
 
  
+  $(document).ready(function(){
+	$('#pieChart').viewportChecker({
+		callbackFunction: function(elem, action){
+
+            var myBarChart = new Chart(barCtx,{
+                type: 'horizontalBar',
+                data: {
+                    labels: ["HTML5", "CSS3", "LESS", "SASS", "JavaScript"],
+                    datasets: [{
+                        label: '1',
+                        data: [80, 70, 60, 60, 65],
+                        backgroundColor: ['#F0B056', '#F0B056','#F0B056','#F0B056','#F0B056'],
+                        stack: 'Stack 0',
+                        hoverBackgroundColor: [
+                            "#F4CE95",
+                            "#F4CE95",
+                            "#F4CE95",
+                            "#F4CE95",
+                            "#F4CE95"
+                        ]
+                    }, {
+                        label: '2',
+                        backgroundColor: ['#FBF1E5','#FBF1E5','#FBF1E5','#FBF1E5','#FBF1E5'],
+                        stack: 'Stack 0',
+                        data: [20, 30, 40, 40, 35]
+                    }],
+                },
+                options: {
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        callbacks: {
+                            title: function(tooltipItem, data) {
+                              return data['labels'][tooltipItem[0]['index']];
+                            },
+                            label: function(tooltipItem, data) {
+                              return '';
+                            },
+                            afterLabel: function(tooltipItem, data) {
+                              var dataset = data['datasets'][0];
+                              return data['datasets'][0]['data'][tooltipItem['index']];
+                            }
+                        }
+            
+                    },
+                    scales: {
+                        xAxes: [{
+                            display: false,
+                            ticks: {
+                                beginAtZero:true
+                            },
+                            gridLines: {
+                                display:false
+                            },
+                            stacked: true
+                        }],
+                        yAxes: [{
+                            ticks: {
+                              beginAtZero: true
+                            },
+                            gridLines: {
+                                display:false
+                            },
+                            stacked: true
+                        }]
+                    }
+                }
+            });
+
+            var myPieChart = new Chart(pieCtx,{
+                type: 'doughnut',
+                data: {
+                    datasets: [{
+                        data: [79,21],
+                        boxWidth: 80,
+                        backgroundColor: ['#133671', '#B6CCED'],
+                        hoverBackgroundColor: [
+                            "#FF6384",
+                            "#B6CCED"
+                          ]
+                    }],
+                },
+                options: {
+                    tooltips : {
+                        enabled: false      
+                    },
+                    cutoutPercentage: 75,
+                    elements: {
+                        center: {
+                        text: 'ENGLISH Upper',
+                        color: '#36A2EB', //Default black
+                        fontStyle: 'Helvetica', //Default Arial
+                        sidePadding: 15 //Default 20 (as a percentage)
+                      }
+                    }
+                }
+            });
+		}
+    });
+    $('#pieChart').viewportChecker({
+		callbackFunction: function(elem, action){
+            
+            
+		}
+	});
+});

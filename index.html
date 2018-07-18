@@ -6,7 +6,6 @@
 	<title>Vyacheslav Kochukov</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/onepage-scroll.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	
 </head>
@@ -15,37 +14,47 @@
 	<!-- PRELOADER-->
 	<div class="page-preloader"><span class="spinner"></span></div>
 
-<div class="fullpage">
+<header>
+
+</header>	
+<nav class="menu" id="navigation-menu">
+	<ul class="nav">
+		<li class="nav-item"><a href="#section-1">Home</a></li>
+		<li class="nav-item"><a href="#section-2">Skills</a></li>
+		<li class="nav-item"><a href="#section-3">Education</a></li>
+		<li class="nav-item"><a href="#section-4">Portfolio</a></li>
+		<li class="nav-item"><a href="#section-5">Certificates</a></li>
+		<li class="nav-item"><a href="#section-6">Contact</a></li>
+		<div class="line-menu"></div>
+		<li class="nav-item">
+			<div id="nav-icon1">
+				<span></span>
+				<span></span>
+				<span></span>
+			  </div>			  
+		</li>
+	</ul>
+</nav>
+<div class="fullpage" id="content">
 	<!-- HEADER-->
-	<section class="main-header" id="home">
-		<nav class="menu">
-				<ul class="nav">
-						<li class="nav-item"><a href="#home">Home</a></li>
-						<li class="nav-item"><a href="#skills">Skills</a></li>
-						<li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-						<li class="nav-item"><a href="#contacts">Contact</a></li>
-						<li class="nav-item">
-							  <div id="menu-button">
-								  <div class="bar"></div>
-								  <div class="bar"></div>
-								  <div class="bar"></div>
-							  </div>
-						  </li>
-					  </ul>
-		</nav>
+	<section class="main-header" id="section-1">
+		
 		<div class="fullscreen-bg">
 			<div class="overlay">
 				<h1><span class="typed"></span></h1>
 			</div>
-			<video loop muted autoplay poster="video/22.mp4" class="fullscreen-bg__video">
+			<video loop muted autoplay poster="video/img22.jpg" class="fullscreen-bg__video">
 				<source src="video/22.mp4" type="video/mp4">
 			</video>
 		</div>
+
+		<hr/><a href="#" rel="next">&darr; Next section</a>
 	</section>
 
 	<!-- SKILLS SECTION-->
-	<section class="container" id="skills">
-		<article class="resume" id="about">
+	<section class="container" id="section-2">
+
+		<div class="resume" id="about">
 			<h1 class="resume__tittle">resume</h1>
 			<div class="resume__skills">
 				<div class="resume__skills-prof">
@@ -68,24 +77,32 @@
 					<h2>Languages skills</h2>
 					<canvas id="pieChart" width="10px" height="10px"></canvas>
 				</div>
-				<div class="resume__skills-code">
+				<div class="resume__skills-code hidden">
 					<h2>Coding skills</h2>
 					<canvas id="barChart" width="250px" height="250px"></canvas>
 				</div>
 			</div>
-			<a class="resume-link" href="#">Download (PDF)</a>
-		</article>
+			<a class="resume-link" href="Resume(2).pdf">Download (PDF)</a>
+		</div>
+
+		<hr/>
+		<a href="#top">&uarr; Back to top</a>
+		<a href="#" rel="next">&darr; Next section</a>
 	</section>
 
 	<!-- ROAD SECTION-->
-	<section class="container">
+	<section class="container" id="section-3">
 		<div class="portfolio">
 			<h2 class="tittle-portfolio">Education Road</h2>
 		</div>
+
+		<hr/>
+		<a href="#top">&uarr; Back to top</a>
+		<a href="#" rel="next">&darr; Next section</a>
 	</section>
 
 	<!-- PORTFOLIO SECTION-->
-	<section class="container" id="portfolio">
+	<section class="container" id="section-4">
 		<div class="portfolio">
 			<h2 class="tittle-portfolio">Recent works</h2>
 			<div class="gallery">
@@ -94,10 +111,14 @@
 				<div class="item site-bearbershop"><a class="sedona-link hover-link" href="sedona-index.html"></a></div>
             </div>
 		</div>
+
+		<hr/>
+		<a href="#top">&uarr; Back to top</a>
+		<a href="#" rel="next">&darr; Next section</a>
 	</section>
 
 	<!-- CERTIFICATES SECTION-->
-	<section class="container">
+	<section class="container" id="section-5">
         <div class="portfolio">
             <h2 class="tittle-portfolio">Certificates</h2>
             <div class="gallery">
@@ -105,10 +126,14 @@
 				<div class="item item--certificate site-bearbershop"><a class="advanced-link hover-link" href="https://assets.htmlacademy.ru/certificates/intensive/35/289641.pdf"></a></div>
             </div>
 		</div>
+
+		<hr/>
+		<a href="#top">&uarr; Back to top</a>
+		<a href="#" rel="next">&darr; Next section</a>
 	</section>
 
 	<!-- CONTACT SECTION-->
-	<section class="contacts" id="contacts">
+	<section class="contacts" id="section-6">
         <h2 class="contacts-tittle">Contact me</h2>
 		<a class="contacts-mail" href="mailto:thirtylynx@gmail.com">Email: thirtylynx@gmail.com</a>
 		<ul class="contacts-list">
@@ -116,17 +141,23 @@
 			<li><a href="https://vk.com/vkochukov">VK</a></li>
 			<li><a href="https://www.instagram.com/_vkochukov/">Instagram</a></li>
 		</ul>
+
+		<hr /><a href="#top">&uarr; Back to top</a>
 	</section>
+
 </div>
 
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/jquery.onepage-scroll.min.js"></script>
+	<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+	<script src="js/jquery.viewportchecker.min.js"></script>
+	
 	<script src="js/preloader.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-	<script src="js/charts.js"></script>
+	
 	<script src="js/typed.min.js"></script>
 	<script src="js/type-text.js"></script>
+	<script src="js/charts.js"></script>
 	
 			
 </body>
