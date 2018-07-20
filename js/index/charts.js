@@ -153,6 +153,7 @@ Chart.pluginService.register({
             });
 		}
     });
+// CHECK VIEWPORT
     $('#pieChart').viewportChecker({
 		callbackFunction: function(elem, action){
             

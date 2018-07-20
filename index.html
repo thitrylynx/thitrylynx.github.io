@@ -7,49 +7,55 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	
 </head>
 
 <body>
 	<!-- PRELOADER-->
-	<div class="page-preloader"><span class="spinner"></span></div>
+	<div class="page-preloader">
+		<span class="spinner"></span>
+	</div>
 
-<header>
-
-</header>	
-<nav class="menu" id="navigation-menu">
-	<ul class="nav">
-		<li class="nav-item"><a href="#section-1">Home</a></li>
-		<li class="nav-item"><a href="#section-2">Skills</a></li>
-		<li class="nav-item"><a href="#section-3">Education</a></li>
-		<li class="nav-item"><a href="#section-4">Portfolio</a></li>
-		<li class="nav-item"><a href="#section-5">Certificates</a></li>
-		<li class="nav-item"><a href="#section-6">Contact</a></li>
-		<div class="line-menu"></div>
-		<li class="nav-item">
-			<div id="nav-icon1">
-				<span></span>
-				<span></span>
-				<span></span>
-			  </div>			  
-		</li>
-	</ul>
-</nav>
-<div class="fullpage" id="content">
 	<!-- HEADER-->
-	<section class="main-header" id="section-1">
-		
-		<div class="fullscreen-bg">
-			<div class="overlay">
-				<h1><span class="typed"></span></h1>
-			</div>
-			<video loop muted autoplay poster="video/img22.jpg" class="fullscreen-bg__video">
-				<source src="video/22.mp4" type="video/mp4">
-			</video>
-		</div>
+	<header class="header" id="section-1">
 
-		<hr/><a href="#" rel="next">&darr; Next section</a>
-	</section>
+		<!-- NAVIGATION-->
+		<nav class="menu" id="navigation-menu">
+			<ul class="nav">
+				<li class="nav-item">
+					<a href="#section-1">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#section-2">Skills</a>
+				</li>
+				<li class="nav-item">
+					<a href="#section-3">Education</a>
+				</li>
+				<li class="nav-item">
+					<a href="#section-4">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a href="#section-5">Certificates</a>
+				</li>
+				<li class="nav-item">
+					<a href="#section-6">Contact</a>
+				</li>
+				<div class="line-menu"></div>
+				<li class="nav-item">
+					<div id="nav-icon1">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<h1 class="typed-text">
+			<span class="typed"></span>
+		</h1>
+		<a class="next-button" href="#contact" rel="next">&darr; Next section</a>
+		<canvas class="header-bg"></canvas>
+
+	</header>
 
 	<!-- SKILLS SECTION-->
 	<section class="container" id="section-2">
@@ -106,10 +112,16 @@
 		<div class="portfolio">
 			<h2 class="tittle-portfolio">Recent works</h2>
 			<div class="gallery">
-				<div class="item site-mishka"><a class="mishka-link hover-link" href="https://htmlacademy-adaptive.github.io/289641-mishka/7/"></a></div>
-				<div class="item site-bearbershop"><a class="barbershop-link hover-link" href="barbershop-index.html"></a></div>
-				<div class="item site-bearbershop"><a class="sedona-link hover-link" href="sedona-index.html"></a></div>
-            </div>
+				<div class="item site-mishka">
+					<a class="mishka-link hover-link" href="https://htmlacademy-adaptive.github.io/289641-mishka/7/"></a>
+				</div>
+				<div class="item site-bearbershop">
+					<a class="barbershop-link hover-link" href="barbershop-index.html"></a>
+				</div>
+				<div class="item site-bearbershop">
+					<a class="sedona-link hover-link" href="sedona-index.html"></a>
+				</div>
+			</div>
 		</div>
 
 		<hr/>
@@ -119,12 +131,16 @@
 
 	<!-- CERTIFICATES SECTION-->
 	<section class="container" id="section-5">
-        <div class="portfolio">
-            <h2 class="tittle-portfolio">Certificates</h2>
-            <div class="gallery">
-				<div class="item item--certificate site-mishka"><a class="basic-link hover-link" href="https://assets.htmlacademy.ru/certificates/intensive/32/289641.pdf"></a></div>
-				<div class="item item--certificate site-bearbershop"><a class="advanced-link hover-link" href="https://assets.htmlacademy.ru/certificates/intensive/35/289641.pdf"></a></div>
-            </div>
+		<div class="portfolio">
+			<h2 class="tittle-portfolio">Certificates</h2>
+			<div class="gallery">
+				<div class="item item--certificate site-mishka">
+					<a class="basic-link hover-link" href="https://assets.htmlacademy.ru/certificates/intensive/32/289641.pdf"></a>
+				</div>
+				<div class="item item--certificate site-bearbershop">
+					<a class="advanced-link hover-link" href="https://assets.htmlacademy.ru/certificates/intensive/35/289641.pdf"></a>
+				</div>
+			</div>
 		</div>
 
 		<hr/>
@@ -133,32 +149,37 @@
 	</section>
 
 	<!-- CONTACT SECTION-->
-	<section class="contacts" id="section-6">
-        <h2 class="contacts-tittle">Contact me</h2>
+	<footer class="contacts" id="section-6">
+		<h2 class="contacts-tittle">Contact me</h2>
 		<a class="contacts-mail" href="mailto:thirtylynx@gmail.com">Email: thirtylynx@gmail.com</a>
 		<ul class="contacts-list">
-			<li><a href="https://github.com/thitrylynx">GitHub</a></li>
-			<li><a href="https://vk.com/vkochukov">VK</a></li>
-			<li><a href="https://www.instagram.com/_vkochukov/">Instagram</a></li>
+			<li>
+				<a href="https://github.com/thitrylynx">GitHub</a>
+			</li>
+			<li>
+				<a href="https://vk.com/vkochukov">VK</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/_vkochukov/">Instagram</a>
+			</li>
 		</ul>
 
-		<hr /><a href="#top">&uarr; Back to top</a>
-	</section>
+		<a href="#top">&uarr; Back to top</a>
+	</footer>
 
-</div>
 
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
-	<script src="js/jquery.viewportchecker.min.js"></script>
-	
-	<script src="js/preloader.js"></script>
+	<script src="js/index/jquery.malihu.PageScroll2id.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-	
-	<script src="js/typed.min.js"></script>
-	<script src="js/type-text.js"></script>
-	<script src="js/charts.js"></script>
-	
-			
+	<script src="js/index/typed.min.js"></script>
+	<script src="js/index/jquery.viewportchecker.min.js"></script>
+
+	<script src="js/index/preloader.js"></script>
+	<script src="js/index/type-text.js"></script>
+	<script src="js/index/charts.js"></script>
+
+
 </body>
+
 </html>
