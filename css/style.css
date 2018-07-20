@@ -51,6 +51,7 @@ body {
   font-family: "Montserrat", "Arial", sans-serif;
   text-transform: uppercase;
 }
+
 .page-preloader {
   position: fixed;
   left: 0;
@@ -61,63 +62,19 @@ body {
   z-index: 200;
 }
 
-.page-preloader .spinner {
+.spinner {
   width: 82px;
   height: 82px;
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   background: url("../img/rings.svg") no-repeat 50% 50%;
   background-size: 90px;
   margin: -41px 0 0 -41px;
 }
-.typed::after {
-  content: "|";
-  color: #ffbd46;
-  display: inline;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-
-/*Removes cursor that comes with typed.js*/
-.typed-cursor {
-  opacity: 0;
-  display: none;
-}
-/*Custom cursor animation*/
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.wrapper {
+  display: flex;
+  flex-direction: column;
 }
 .header {
   position: relative;
@@ -125,28 +82,14 @@ body {
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  z-index: 100;
+  z-index: 200;
   background: rgba(0, 0, 0, 0.6);
 }
-.next-button {
+.header-bg {
   position: absolute;
-  top: 85%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-}
-
-.typed-text {
-  width: 500px;
-  margin: 0 auto;
-  line-height: 35px;
-  padding: 5px 0;
-  text-align: center;
-  color: #fff;
-  font-size: 35px;
-  margin-top: 17%;
-  z-index: 10;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 .menu {
   position: fixed;
@@ -266,9 +209,78 @@ body {
   width: 60px;
   transform: translateX(0);
 }
+.typed::after {
+  content: "|";
+  color: #ffbd46;
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor {
+  opacity: 0;
+  display: none;
+}
+
+/*Custom cursor animation*/
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.next-button {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.typed-text {
+  width: 500px;
+  margin: 0 auto;
+  line-height: 35px;
+  padding: 5px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  margin-top: 17%;
+  z-index: 10;
+}
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 section {
@@ -278,58 +290,37 @@ section {
 .resume {
   display: flex;
   flex-direction: column;
+  
   flex-wrap: wrap;
-  min-height: 530px;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 20px;
-  border: 10px solid white;
   box-shadow: 0px 5px 15px 0px silver;
+  background-color: #63b8ad;
 }
-.resume__tittle {
-  position: relative;
-  margin: 0;
-  padding-top: 60px;
-  padding-bottom: 15px;
-  background-image: url(../img/pattern-1.png);
-  background-size: 70px auto;
-  text-align: center;
-  text-transform: none;
-}
-.resume__tittle::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  width: 60px;
-  height: 60px;
-  margin-left: -31px;
-  background-image: url(../img/resume.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+
 .resume__skills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .resume__skills-prof {
   display: flex;
   flex-direction: column;
   width: 440px;
+  background-color: darkblue;
 }
 .resume__skills-title {
   align-self: flex-start;
-  margin-left: 20px;
+  margin: 0 auto;
   color: #7dcbc1;
+  background: #000;
 }
 .resume__skills-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 420px;
+  background: red;
   margin: 0;
-  padding-left: 40px;
-  padding-right: 0px;
-  border-right: 1px dashed #7dcbc1;
 }
 .resume__skills-list li {
   align-self: flex-start;
@@ -343,25 +334,15 @@ section {
   border: 5px solid white;
 }
 .resume__skills-languages {
-  padding-left: 40px;
-  padding-right: 50px;
+	background: #000;
 }
-.resume__skills-languages h2 {
-  margin-left: -10px;
-  color: #7dcbc1;
-}
+
 
 .resume__skills-code {
   flex-grow: 0;
-  margin-left: 35px;
-  padding-top: 17px;
-  padding-left: 10px;
+  background-color: blueviolet;
 }
-.resume__skills-code h2 {
-  margin: 0;
-  margin-bottom: 20px;
-  color: #7dcbc1;
-}
+
 .resume__skills-code div {
   display: flex;
   margin-bottom: 10px;

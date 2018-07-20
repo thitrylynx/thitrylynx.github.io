@@ -4,6 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Vyacheslav Kochukov</title>
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
+	<meta content="width=1180" name="viewport" id="viewport">
+
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -15,159 +18,161 @@
 		<span class="spinner"></span>
 	</div>
 
-	<!-- HEADER-->
-	<header class="header" id="section-1">
+	<div class="wrapper">
 
-		<!-- NAVIGATION-->
-		<nav class="menu" id="navigation-menu">
-			<ul class="nav">
-				<li class="nav-item">
-					<a href="#section-1">Home</a>
-				</li>
-				<li class="nav-item">
-					<a href="#section-2">Skills</a>
-				</li>
-				<li class="nav-item">
-					<a href="#section-3">Education</a>
-				</li>
-				<li class="nav-item">
-					<a href="#section-4">Portfolio</a>
-				</li>
-				<li class="nav-item">
-					<a href="#section-5">Certificates</a>
-				</li>
-				<li class="nav-item">
-					<a href="#section-6">Contact</a>
-				</li>
-				<div class="line-menu"></div>
-				<li class="nav-item">
-					<div id="nav-icon1">
-						<span></span>
-						<span></span>
-						<span></span>
+		<!-- HEADER-->
+		<header class="header" id="section-1">
+
+			<!-- NAVIGATION-->
+			<nav class="menu" id="navigation-menu">
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="#section-1">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#section-2">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a href="#section-3">Education</a>
+					</li>
+					<li class="nav-item">
+						<a href="#section-4">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#section-5">Certificates</a>
+					</li>
+					<li class="nav-item">
+						<a href="#section-6">Contact</a>
+					</li>
+					<div class="line-menu"></div>
+					<li class="nav-item">
+						<div id="nav-icon1">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<h1 class="typed-text">
+				<span class="typed"></span>
+			</h1>
+			<a class="next-button" href="#contact" rel="next">&darr; Next section</a>
+			<canvas class="header-bg"></canvas>
+
+		</header>
+
+		<!-- SKILLS SECTION-->
+		<section class="container" id="section-2">
+
+			<div class="resume" id="about">
+				<h1 class="resume__tittle">skills</h1>
+				<div class="resume__skills">
+					<div class="resume__skills-prof">
+						<h2 class="resume__skills-title">Proffesional skills</h2>
+						<ul class="resume__skills-list">
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Git</li>
+							<li>Grunt</li>
+							<li>HTML5</li>
+							<li>BEM</li>
+							<li>SASS</li>
+							<li>Mobile first</li>
+							<li>Adaptive</li>
+							<li>Retina</li>
+							<li>Cross-browser</li>
+						</ul>
 					</div>
+					<div class="resume__skills-languages">
+						<h2 class="resume__skills-title">Languages skills</h2>
+						<canvas id="pieChart" width="10px" height="10px"></canvas>
+					</div>
+					<div class="resume__skills-code">
+						<h2 class="resume__skills-title">Coding skills</h2>
+						<canvas id="barChart" width="250px" height="250px"></canvas>
+					</div>
+				</div>
+				<a class="resume-link" href="Resume(2).pdf">Download (PDF)</a>
+			</div>
+
+			<hr/>
+			<a href="#top">&uarr; Back to top</a>
+			<a href="#" rel="next">&darr; Next section</a>
+		</section>
+
+		<!-- ROAD SECTION-->
+		<section class="container" id="section-3">
+			<div class="portfolio">
+				<h2 class="tittle-portfolio">Education Road</h2>
+			</div>
+
+			<hr/>
+			<a href="#top">&uarr; Back to top</a>
+			<a href="#" rel="next">&darr; Next section</a>
+		</section>
+
+		<!-- PORTFOLIO SECTION-->
+		<section class="container" id="section-4">
+			<div class="portfolio">
+				<h2 class="tittle-portfolio">Recent works</h2>
+				<div class="gallery">
+					<div class="item site-mishka">
+						<a class="mishka-link hover-link" href="https://htmlacademy-adaptive.github.io/289641-mishka/7/"></a>
+					</div>
+					<div class="item site-bearbershop">
+						<a class="barbershop-link hover-link" href="barbershop-index.html"></a>
+					</div>
+					<div class="item site-bearbershop">
+						<a class="sedona-link hover-link" href="sedona-index.html"></a>
+					</div>
+				</div>
+			</div>
+
+			<hr/>
+			<a href="#top">&uarr; Back to top</a>
+			<a href="#" rel="next">&darr; Next section</a>
+		</section>
+
+		<!-- CERTIFICATES SECTION-->
+		<section class="container" id="section-5">
+			<div class="portfolio">
+				<h2 class="tittle-portfolio">Certificates</h2>
+				<div class="gallery">
+					<div class="item item--certificate site-mishka">
+						<a class="basic-link hover-link" href="https://assets.htmlacademy.ru/certificates/intensive/32/289641.pdf"></a>
+					</div>
+					<div class="item item--certificate site-bearbershop">
+						<a class="advanced-link hover-link" href="https://assets.htmlacademy.ru/certificates/intensive/35/289641.pdf"></a>
+					</div>
+				</div>
+			</div>
+
+			<hr/>
+			<a href="#top">&uarr; Back to top</a>
+			<a href="#" rel="next">&darr; Next section</a>
+		</section>
+
+		<!-- CONTACT SECTION-->
+		<footer class="contacts" id="section-6">
+			<h2 class="contacts-tittle">Contact me</h2>
+			<a class="contacts-mail" href="mailto:thirtylynx@gmail.com">Email: thirtylynx@gmail.com</a>
+			<ul class="contacts-list">
+				<li>
+					<a href="https://github.com/thitrylynx">GitHub</a>
+				</li>
+				<li>
+					<a href="https://vk.com/vkochukov">VK</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/_vkochukov/">Instagram</a>
 				</li>
 			</ul>
-		</nav>
-		<h1 class="typed-text">
-			<span class="typed"></span>
-		</h1>
-		<a class="next-button" href="#contact" rel="next">&darr; Next section</a>
-		<canvas class="header-bg"></canvas>
 
-	</header>
+			<a href="#top">&uarr; Back to top</a>
+		</footer>
 
-	<!-- SKILLS SECTION-->
-	<section class="container" id="section-2">
-
-		<div class="resume" id="about">
-			<h1 class="resume__tittle">resume</h1>
-			<div class="resume__skills">
-				<div class="resume__skills-prof">
-					<h2 class="resume__skills-title ">Proffesional skills</h2>
-					<ul class="resume__skills-list">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>Git</li>
-						<li>Grunt</li>
-						<li>HTML5</li>
-						<li>BEM</li>
-						<li>SASS</li>
-						<li>Mobile first</li>
-						<li>Adaptive</li>
-						<li>Retina</li>
-						<li>Cross-browser</li>
-					</ul>
-				</div>
-				<div class="resume__skills-languages">
-					<h2>Languages skills</h2>
-					<canvas id="pieChart" width="10px" height="10px"></canvas>
-				</div>
-				<div class="resume__skills-code hidden">
-					<h2>Coding skills</h2>
-					<canvas id="barChart" width="250px" height="250px"></canvas>
-				</div>
-			</div>
-			<a class="resume-link" href="Resume(2).pdf">Download (PDF)</a>
-		</div>
-
-		<hr/>
-		<a href="#top">&uarr; Back to top</a>
-		<a href="#" rel="next">&darr; Next section</a>
-	</section>
-
-	<!-- ROAD SECTION-->
-	<section class="container" id="section-3">
-		<div class="portfolio">
-			<h2 class="tittle-portfolio">Education Road</h2>
-		</div>
-
-		<hr/>
-		<a href="#top">&uarr; Back to top</a>
-		<a href="#" rel="next">&darr; Next section</a>
-	</section>
-
-	<!-- PORTFOLIO SECTION-->
-	<section class="container" id="section-4">
-		<div class="portfolio">
-			<h2 class="tittle-portfolio">Recent works</h2>
-			<div class="gallery">
-				<div class="item site-mishka">
-					<a class="mishka-link hover-link" href="https://htmlacademy-adaptive.github.io/289641-mishka/7/"></a>
-				</div>
-				<div class="item site-bearbershop">
-					<a class="barbershop-link hover-link" href="barbershop-index.html"></a>
-				</div>
-				<div class="item site-bearbershop">
-					<a class="sedona-link hover-link" href="sedona-index.html"></a>
-				</div>
-			</div>
-		</div>
-
-		<hr/>
-		<a href="#top">&uarr; Back to top</a>
-		<a href="#" rel="next">&darr; Next section</a>
-	</section>
-
-	<!-- CERTIFICATES SECTION-->
-	<section class="container" id="section-5">
-		<div class="portfolio">
-			<h2 class="tittle-portfolio">Certificates</h2>
-			<div class="gallery">
-				<div class="item item--certificate site-mishka">
-					<a class="basic-link hover-link" href="https://assets.htmlacademy.ru/certificates/intensive/32/289641.pdf"></a>
-				</div>
-				<div class="item item--certificate site-bearbershop">
-					<a class="advanced-link hover-link" href="https://assets.htmlacademy.ru/certificates/intensive/35/289641.pdf"></a>
-				</div>
-			</div>
-		</div>
-
-		<hr/>
-		<a href="#top">&uarr; Back to top</a>
-		<a href="#" rel="next">&darr; Next section</a>
-	</section>
-
-	<!-- CONTACT SECTION-->
-	<footer class="contacts" id="section-6">
-		<h2 class="contacts-tittle">Contact me</h2>
-		<a class="contacts-mail" href="mailto:thirtylynx@gmail.com">Email: thirtylynx@gmail.com</a>
-		<ul class="contacts-list">
-			<li>
-				<a href="https://github.com/thitrylynx">GitHub</a>
-			</li>
-			<li>
-				<a href="https://vk.com/vkochukov">VK</a>
-			</li>
-			<li>
-				<a href="https://www.instagram.com/_vkochukov/">Instagram</a>
-			</li>
-		</ul>
-
-		<a href="#top">&uarr; Back to top</a>
-	</footer>
-
-
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/index/jquery.malihu.PageScroll2id.min.js"></script>
